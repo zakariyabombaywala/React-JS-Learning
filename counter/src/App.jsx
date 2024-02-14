@@ -5,23 +5,20 @@ function App() {
   let [counter, setCounter] = useState(0);
 
   const addValue = () => {
-    if (counter === 20) {
-      setCounter(20);
-    } else {
+    if (counter < 20) {
       setCounter(counter + 1);
     }
   };
 
   const subValue = () => {
-    if (counter === 0) {
-      setCounter(0);
-    } else {
+    if (counter > 0) {
       setCounter(counter - 1);
     }
   };
   return (
     <>
-      <h1>Counter Value : {counter}</h1>
+      <h1>Project 01 : COUNTER</h1>
+      <h3>Counter Value : {counter}</h3>
       <button onClick={addValue}>+</button>
       <button onClick={subValue}>-</button>
     </>
