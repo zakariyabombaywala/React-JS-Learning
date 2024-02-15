@@ -34,7 +34,10 @@ function App() {
 
   return (
     <>
-      <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
+      <div
+        className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8
+       bg-gray-800 text-orange-500"
+      >
         <h1 className="text-white text-center text-4xl my-3">
           Password Generator
         </h1>
@@ -49,7 +52,8 @@ function App() {
           />
           <button
             onClick={copyClipboard}
-            className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 hover:bg-blue-950"
+            className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0
+             hover:bg-blue-950"
           >
             Copy
           </button>
